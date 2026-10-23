@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>sfeir skr – Apps and games</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <meta name="description" content="Independent, privacy-first Android apps and games by sfeir skr.">
+  <style>
+    /* Self-contained: no external fonts, scripts or trackers. */
+    :root { --bg:#10142a; --surface:#1b2142; --outline:#2e3560; --text:#f5f3ff; --muted:#aab0cf; --coral:#ff5f57; --amber:#ffb547; }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body { margin:0; background:var(--bg); color:var(--text); font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+    main { max-width:760px; margin:0 auto; padding:48px 16px 64px; }
+    a { color:var(--amber); }
+    h1 { font-size:clamp(32px,8vw,48px); line-height:1.1; margin:0 0 12px; }
+    .grad { background:linear-gradient(90deg,var(--coral),var(--amber)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+    p { color:var(--muted); }
+    h2 { font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:var(--amber); margin:40px 0 12px; }
+    .app { display:flex; gap:16px; align-items:flex-start; background:var(--surface); border:1px solid var(--outline); border-radius:20px; padding:20px; text-decoration:none; }
+    .app:hover { border-color:var(--amber); }
+    .icon { flex:none; width:64px; height:64px; border-radius:16px; background:#151226; display:grid; place-items:center; }
+    .app h3 { margin:0; color:var(--text); font-size:20px; }
+    .app p { margin:4px 0 8px; }
+    .links a { margin-right:16px; font-size:15px; }
+    ul { color:var(--muted); padding-left:20px; }
+    .brand { display:flex; align-items:center; gap:18px; margin-bottom:12px; }
+    .brand img { width:72px; height:72px; border-radius:18px; }
+    .brand h1 { margin:0; }
+    footer { margin-top:48px; padding-top:20px; border-top:1px solid var(--outline); color:var(--muted); font-size:14px; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <img src="logo.png" alt="sfeir skr logo" width="72" height="72">
+    <h1><span class="grad">sfeir skr</span></h1>
+  </div>
+  <p>Independent Android apps and games. Simple, useful and private by default.</p>
+
+  <h2>Apps and games</h2>
+  <a class="app" href="https://marble.sfeir.zip/" style="margin-bottom:16px">
+    <div class="icon" aria-hidden="true"><img src="marble-drift.png" alt="" width="64" height="64" style="border-radius:16px"></div>
+    <div>
+      <h3>Marble Drift</h3>
+      <p>A tilt-maze game for Solana phones. Guide a marble through mazes, beat the clock and keep your daily streak. Play as a guest offline, or connect a wallet for the full game.</p>
+      <div class="links">
+        <span style="color:var(--amber)">Game page →</span>
+      </div>
+    </div>
+  </a>
+
+  <div class="app">
+    <div class="icon" aria-hidden="true">
+      <!-- Find My Solana icon (bell with sound waves) -->
+      <svg width="52" height="52" viewBox="20 18 68 68">
+        <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8C52FF"/><stop offset="1" stop-color="#1FE0A6"/></linearGradient></defs>
+        <path fill="url(#g)" d="M54,33c-8.3,0 -14,6.6 -14,15v10.5l-5,7.5v2.5h38v-2.5l-5,-7.5v-10.5c0,-8.4 -5.7,-15 -14,-15z"/>
+        <path fill="#1FE0A6" d="M49,71a5,5 0,1 0,10 0z"/>
+        <path fill="#8C52FF" d="M51.5,30.5a2.5,2.5 0,1 1,5 0v3h-5z"/>
+        <path fill="none" stroke="#8C52FF" stroke-width="3" stroke-linecap="round" d="M31,42c-3,4 -3,12 0,16"/>
+        <path fill="none" stroke="#1FE0A6" stroke-width="3" stroke-linecap="round" d="M77,42c3,4 3,12 0,16"/>
+      </svg>
+    </div>
+    <div>
+      <h3>Find My Solana</h3>
+      <p>Lost your phone nearby? Say “Solana” and it rings, vibrates and flashes. Works offline; your voice stays on your phone.</p>
+      <div class="links">
+        <a href="https://sfeir-skr.github.io/find-my-solana/">App page</a>
+        <a href="https://sfeir-skr.github.io/find-my-solana/privacy.html">Privacy policy</a>
+      </div>
+    </div>
+  </div>
+
+  <h2>Principles</h2>
+  <ul>
+    <li>No ads, no tracking, no analytics.</li>
+    <li>Collect as little data as possible, ideally none.</li>
+    <li>Each app has its own clear privacy policy: <a href="https://marble.sfeir.zip/privacy.html">Marble Drift</a>, <a href="https://sfeir-skr.github.io/find-my-solana/privacy.html">Find My Solana</a>.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:sfeir.skr@gmail.com">sfeir.skr@gmail.com</a></p>
+
+  <footer>Apps by sfeir skr are independent and not affiliated with the Solana Foundation or Solana Mobile.</footer>
+</main>
+</body>
+</html>
