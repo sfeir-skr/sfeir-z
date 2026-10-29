@@ -19,9 +19,9 @@
     p, li { color:var(--muted); }
     strong { color:var(--text); }
     h2 { font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:var(--amber); margin:40px 0 12px; }
-    .top { display:flex; align-items:center; gap:14px; margin-bottom:28px; }
-    .top img { width:44px; height:44px; border-radius:12px; }
-    .top a { text-decoration:none; font-weight:800; letter-spacing:.06em; }
+    .brand { display:flex; align-items:center; gap:18px; margin-bottom:28px; text-decoration:none; width:fit-content; }
+    .brand img { width:72px; height:72px; border-radius:18px; }
+    .brand .name { font-size:clamp(32px,8vw,48px); font-weight:800; line-height:1.1; }
     .card { background:var(--surface); border:1px solid var(--outline); border-radius:20px; padding:20px 22px; margin:16px 0; }
     .addr { display:block; word-break:break-all; font:15px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; color:var(--text); background:#0c1022; border:1px solid var(--outline); border-radius:12px; padding:14px; margin:8px 0 0; user-select:all; }
     .qr { display:block; width:200px; height:200px; margin:16px 0 0; background:#fff; border-radius:12px; padding:10px; }
@@ -31,7 +31,7 @@
 </head>
 <body>
 <main>
-  <div class="top"><img src="../logo.png" alt="sfeir skr logo" width="44" height="44"><a href="../">← sfeir skr</a></div>
+  <a class="brand" href="https://skr.sfeir.zip/" aria-label="sfeir skr, back to the main page"><img src="../logo.png" alt="sfeir skr logo" width="72" height="72"><span class="name grad">sfeir skr</span></a>
 
   <h1><span class="grad">Support the developer</span></h1>
   <p>I make small apps and games on my own: <a href="https://findmysolana.sfeir.zip/">Find My Solana</a> and <a href="https://marbledrift.sfeir.zip/">Marble Drift</a>. If you enjoy them and want to help me keep improving them, you can send a small gift. Thank you!</p>
